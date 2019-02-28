@@ -44,16 +44,17 @@ section {
     position: relative;
         top: 81px;
 }
-#about-content .container {
+section .container {
     border: #ccc solid 1px;
     margin: 0 auto;
     max-width: 900px;
     padding: 30px;
 }
-#about-content h2 {
+section h2 {
     border-bottom: #ccc solid 3px;
     color: #4aaaa5;
     margin-bottom: 30px;
+    padding-top: 0;
     padding-left: 0;
 }
 #about-content .home-img {
