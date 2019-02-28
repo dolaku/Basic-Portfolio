@@ -21,7 +21,9 @@ li:last-child {
     border-right: none;
 }
 header {
+    background-color: #fff;
     border-bottom: #ccc solid 3px;
+    z-index: 999;
     position: fixed;
     width: 100%;
 }
@@ -38,12 +40,13 @@ header h2 {
 }
 section {
     margin: 0 auto;
+    padding: 30px;
     position: relative;
         top: 81px;
 }
 #about-content .container {
     border: #ccc solid 1px;
-    margin: 30px auto;
+    margin: 0 auto;
     max-width: 900px;
     padding: 30px;
 }
