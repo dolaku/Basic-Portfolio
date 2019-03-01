@@ -1,4 +1,8 @@
-p, span, ol, ul, li, a, footer {
+p, span, ol, ul, li, a,
+label,
+input,
+textarea,
+footer {
     color: #777;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
@@ -94,7 +98,33 @@ section h2 {
     text-align: center;
     width: calc(100% - 30px);
 }
-
+/***** Contact Page *****/
+label,
+input,
+textarea {
+    display: block;
+}
+#contact-content label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+#contact-content input,
+#contact-content textarea {
+    border: #ccc solid 1px;
+    padding: 8px;
+    width: 98%;
+}
+#contact-content textarea {
+    height: 150px;
+}
+#contact-content #submit-btn {
+    background-color: #4aaaa5;
+    border: none;
+    color: #fff;
+    margin: 15px 0;
+    padding: 8px 20px;
+    width: unset;
+}
 
 footer {
     background-color: #666;
