@@ -19,6 +19,7 @@ li {
 }
 li:last-child {
     border-right: none;
+    padding-right: 0;
 }
 header {
     background-color: #fff;
@@ -57,6 +58,7 @@ section h2 {
     padding-top: 0;
     padding-left: 0;
 }
+/***** Homepage *****/
 #about-content .home-img {
     float: left;
     height: 180px;
@@ -67,13 +69,40 @@ section h2 {
     line-height: 1.5;
     margin-bottom: 15px;
 }
+/***** Portfolio Page *****/
+#portfolio-content .gallery {
+    display: flex;
+        flex-wrap: wrap;
+}
+#portfolio-content .gallery .project {
+    margin: 0 30px 40px 0;
+    position: relative;
+    width: 300px;
+}
+#portfolio-content .gallery .thumbnail {
+    max-width: 100%;
+    object-fit: cover;
+}
+#portfolio-content .gallery h4 {
+    background-color: #4aaaa5;
+    color: #fff;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    font-size: 1.25rem;
+    padding: 15px;
+    position: absolute;
+        bottom: 5%;
+    text-align: center;
+    width: calc(100% - 30px);
+}
+
+
 footer {
     background-color: #666;
     border-top: #4aaaa5 solid 8px;
     color: #ccc;
     font-size: 0.8rem;
     padding: 30px 0 10px;
-    position: absolute;
+    position: fixed;
         bottom: 0;
     text-align: center;
     width: 100%;
