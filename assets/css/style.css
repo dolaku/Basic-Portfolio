@@ -25,6 +25,9 @@ li:last-child {
     border-right: none;
     padding-right: 0;
 }
+body {
+    background-image: url("../images/geo-dark.png");
+}
 header {
     background-color: #fff;
     border-bottom: #ccc solid 3px;
@@ -50,6 +53,7 @@ section {
         top: 81px;
 }
 section .container {
+    background-color: #fff;
     border: #ccc solid 1px;
     margin: 0 auto;
     max-width: 900px;
@@ -66,7 +70,7 @@ section h2 {
 #about-content .home-img {
     float: left;
     height: 180px;
-    padding: 0 20px 20px 0;
+    padding: 5px 20px 20px 0;
 }
 #about-content p {
     font-size: 1.2rem;
@@ -125,7 +129,6 @@ textarea {
     padding: 8px 20px;
     width: unset;
 }
-
 footer {
     background-color: #666;
     border-top: #4aaaa5 solid 8px;
@@ -136,4 +139,10 @@ footer {
         bottom: 0;
     text-align: center;
     width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    nav {
+        margin-right: 30px;
+    }
 }
