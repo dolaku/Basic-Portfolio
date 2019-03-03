@@ -14,16 +14,22 @@ h2 {
 }
 a {
     text-decoration: none;
+    transition: .1s;
 }
-li {
+nav li {
     border-right: #ccc solid 1px;
     display: inline-block;
     list-style-type: none;
     padding: 0 15px;
 }
-li:last-child {
+nav li:last-child {
     border-right: none;
     padding-right: 0;
+}
+nav a:hover {
+    color: #4aaaa5;
+    text-shadow: 0 0 20px #4aaaa5;
+    transition: .1s;
 }
 body {
     background-image: url("../images/geo-dark.png");
@@ -100,7 +106,17 @@ section h2 {
     position: absolute;
         bottom: 5%;
     text-align: center;
+    transition: .3s;
     width: calc(100% - 30px);
+}
+#portfolio-content .gallery h4:hover {
+    bottom: 3px;
+    box-shadow: inset 0px 0px 10px #226966;
+    filter: hue-rotate(180deg);
+    opacity: .65;
+    padding-top: 165px;
+    text-shadow: 0 0 3px #fff;
+    transition: .4s;
 }
 /***** Contact Page *****/
 label,
@@ -122,7 +138,7 @@ textarea {
     height: 150px;
 }
 #contact-content #submit-btn {
-    background-color: #4aaaa5;
+    background-color: #226966;
     border: none;
     color: #fff;
     margin: 15px 0;
@@ -142,6 +158,11 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
+    nav {
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width: 550px) {
     nav {
         margin-right: 30px;
     }
