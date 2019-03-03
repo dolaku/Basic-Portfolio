@@ -138,12 +138,18 @@ textarea {
     height: 150px;
 }
 #contact-content #submit-btn {
-    background-color: #226966;
+    background-color: #4aaaa5;
     border: none;
     color: #fff;
     margin: 15px 0;
     padding: 8px 20px;
+    transition: .1s;
     width: unset;
+}
+#contact-content #submit-btn:hover {
+    background-color: #226966;
+    text-shadow: 0 0 3px #fff;
+    transition: .1s;
 }
 footer {
     background-color: #666;
