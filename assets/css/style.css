@@ -6,6 +6,9 @@ footer {
     color: #777;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
+em {
+    font-style: italic;
+}
 h2 {
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
     font-size: 1.75rem;
@@ -183,5 +186,8 @@ footer {
         float: none;
         height: auto;
         width: 100%;
+    }
+    #portfolio-content .gallery .project {
+        margin-right: 0;
     }
 }
